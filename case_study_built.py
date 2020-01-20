@@ -61,8 +61,8 @@ show()
 mappings = som.win_map(X)
 
 # Making a list of all frauds with scaled data
-frauds = np.concatenate((mappings[(3, 2)], mappings [(5, 2)], mappings [(1, 2)], 
-                                  mappings [(6, 4)]), axis = 0)
+frauds = np.concatenate((mappings[(8,3)], mappings[(3,7)]), axis = 0)
+
 # Transforming the data back into its original form to read the ids of the people
 frauds = sc.inverse_transform(frauds)
 
