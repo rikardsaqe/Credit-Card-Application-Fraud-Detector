@@ -14,8 +14,8 @@ line 64 (which determines which groups of customers are likely to have commited 
 to select those that would be of immediate priority (customer groups that have a likelihood of commiting fraud of above 80% and 
 who had an accepted credit card application).
 
-I acheived an extremely high accuracy in identifying frauds (99%), which suggests to me my model is extremely overfitted to 
-my data. My next steps on this project would be to attempt to gather more relevant data I can train, and also to training my 
+I acheived an extremely high accuracy in identifying frauds (~99%), which suggests to me my model is extremely overfitted to 
+my data. My next steps on this project would be to attempt to gather more relevant data I can train, and also to train my 
 ANN with many iterations of my SOM in hopes of drawing out some consistent trends.
 
 This project was built as part of the Deep Learning A-Z Udemy course: https://www.udemy.com/course/deeplearning/
