@@ -3,7 +3,6 @@
 # Importing Libraries
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # Importing Dataset
 dataset = pd.read_csv('Credit_Card_Applications.csv')
@@ -23,7 +22,7 @@ som = MiniSom(x = 10, y = 10, input_len = 15, sigma = 1.0, learning_rate = 0.5)
 # Assigning random weights of SOM to start with
 som.random_weights_init(X)
 # Randomly training SOM
-som.train_random( data = X, num_iteration = 100)
+som.train_random(data = X, num_iteration = 100)
 
 # Visualizing the Results
 
@@ -45,13 +44,14 @@ colors = ['r', 'g']
 
 # For loop where each node is centrally marked with either a red circle for failing the application or a 
 # green square for passing the application. i represents the index of customers and x represents all of a 
-# given customer's information. Loop ensures location, type of marker, outside coolor of marker, inside 
+# given customer's information. Loop ensures location, type of marker, outside color of marker, inside 
 # color of marker, size of marker, size of marker edge, in that order. 
 for i, x in enumerate(X):
     w = som.winner(x)
-    plot(w[0] + 0.5, w[1] + 0.5, 
-         markers[y[i]], 
-         markeredgecolor = colors[y[i]], 
+    plot(w[0] + 0.5,
+         w[1] + 0.5,
+         markers[y[i]],
+         markeredgecolor = colors[y[i]],
          markerfacecolor = 'None',
          markersize = 10,
          markeredgewidth = 2)
@@ -61,13 +61,7 @@ show()
 mappings = som.win_map(X)
 
 # Making a list of all frauds with scaled data
-frauds = np.concatenate((mappings[(5, 5)], mappings [(6, 7)], mappings [(5, 7)], 
-                                  mappings [(7, 5)], mappings [(7, 8)]), axis = 0)
+frauds = np.concatenate((mappings[(7,3)], mappings[(4,7)]), axis = 0)
+
 # Transforming the data back into its original form to read the ids of the people
 frauds = sc.inverse_transform(frauds)
-
-
-
-    
-
-
