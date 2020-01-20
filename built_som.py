@@ -59,7 +59,6 @@ show()
 
 # Finding the identity of the fraudulent actors
 mappings = som.win_map(X)
-
 # Making a list of all frauds with scaled data
 frauds = np.concatenate((mappings[(5, 5)], mappings [(6, 7)], mappings [(5, 7)], 
                                   mappings [(7, 5)], mappings [(7, 8)]), axis = 0)
