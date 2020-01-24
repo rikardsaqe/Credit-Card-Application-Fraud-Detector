@@ -1,9 +1,10 @@
 # Credit-Card-Application-Fraud-Detector
 
-Built two models: built_som, which uses a Self Organizing Map (SOM) structure taken from [Minisom](https://github.com/JustGlowing/minisom) 
-to attempt to identify people who were most likely to have commited fraud by visualizing customer segmentation, and another,
-case_study_built.py, that combines this algorithim with an Artificial Neural Network that determines the probability of 
-customers having commited fraud and rank orders users by that.
+Built two models to attempt to perform fraud identitifciation through customer segmentation: 
+- built_som, which uses a Self Organizing Map (SOM) structure taken from [Minisom](https://github.com/JustGlowing/minisom) 
+to attempt to identify people who were most likely to have commited fraud by visualizing customer segmentation
+- case_study_built.py, that combines the above algorithim with an Artificial Neural Network that determines the probability of 
+customers having commited fraud and rank orders users by that
 
 # Getting Started
 - Download built_som.py, minisom.py, Credit_Card_Applications.csv, and case_study_built.py into the same folder
