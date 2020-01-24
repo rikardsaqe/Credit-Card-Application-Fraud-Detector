@@ -22,8 +22,8 @@ to select those that would be of immediate priority (customer groups that have a
 # Next Steps For Improvement
 - Reduce overfitting on my model as it is very much so currently
 
-# Author
-- **Rikard Saqe** [Github](https://github.com/rikardsaqe/)
+  # Author
+  - **Rikard Saqe** [Github](https://github.com/rikardsaqe/)
 
-# License
-- This project is licensed under the MIT License, see the [LICENSE.txt](https://github.com/rikardsaqe/Credit-Card-Application-Fraud-Detector/tree/master) file for details
+  # License
+  - This project is licensed under the MIT License, see the [LICENSE.txt](https://github.com/rikardsaqe/Credit-Card-Application-Fraud-Detector/blob/master/LICENSE) file for details
